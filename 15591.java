@@ -22,7 +22,7 @@ class Main
   static ArrayList<Edge>[] adj;
   static ArrayDeque<Integer> queue = new ArrayDeque<>();
 
-  public static void main(String[] args) throws IOException
+  public static void main1(String[] args) throws IOException
   {
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     StringTokenizer st = new StringTokenizer(br.readLine());
