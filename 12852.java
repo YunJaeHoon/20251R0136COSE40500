@@ -1,11 +1,11 @@
 import java.io.*;
 import java.util.*;
 
-class Main
+class Main_12852
 {
   static StringBuilder sb = new StringBuilder();
 
-  public static void main2(String[] args) throws IOException
+  public static void main(String[] args) throws IOException
   {
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
