@@ -93,7 +93,10 @@ class Main_14940
     {
       for(int j = 0; j < m; j++)
       {
-        sb.append(answer[i][j]).append(' ');
+        if(map[i][j] == 1 && answer[i][j] == 0)
+          sb.append(-1).append(' ');
+        else
+          sb.append(answer[i][j]).append(' ');
       }
       sb.append('\n');
     }
