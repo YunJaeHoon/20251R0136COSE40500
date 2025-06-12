@@ -33,16 +33,17 @@ class Main_14501
   // 문제 풀이
   static void process()
   {
-    int[] dp = new int[N + 1];
+    int[] dp = new int[N + 2];
 
-    for(int i = 1; i < N; i++)
+    for(int i = 1; i <= N; i++)
     {
-      if(i + T[i] <= N)
+      if(i + T[i] <= N + 1) {
         dp[i + T[i]] = Math.max(dp[i + T[i]], dp[i] + P[i]);
+      }
 
       dp[i + 1] = Math.max(dp[i + 1], dp[i]);
     }
 
-    System.out.println(dp[N]);
+    System.out.println(dp[N + 1]);
   }
 }
